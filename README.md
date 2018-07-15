@@ -1,3 +1,28 @@
+# 网易云音乐 host
+
+sudo nano /etc/hosts
+
+Hosts 修改条目如下：
+```
+# 网易云音乐数据传输服务器反代
+79.137.38.20 music.163.com
+
+# 归属地查询服务器反代
+79.137.38.20 ip.ws.126.net
+
+# HTTPS DNS 服务器屏蔽
+127.0.0.9 music.httpdns.c.163.com
+```
+```
+测试
+http://music.163.com/#/album?id=32373
+http://music.163.com/#/album?id=32374
+
+参考
+https://jixun.moe/post/oversea-netease-cloud-music-by-hosts/
+```
+= EOF =
+
 # NeteaseCloudMusicFlac
 
 #### [感谢](https://github.com/imfangli/baidu-music-downloader)为 NeteaseCloudMusicFlac 的开发付出过努力以及提出建议的每一个人！
